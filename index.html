@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPORAN PRAKTIKUM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light py-5">
+    <div class="container">
+        <header class="text-center mb-5 pb-4 border-bottom border-primary border-3">
+            <h1 class="display-5 fw-bold text-primary mb-3">LAPORAN PRAKTIKUM</h1>
+            <h2 class="h5 mb-3">Nama: Ahmad Husein Tamada | NIM: 2109106043</h2>
+
+            <!-- Tombol Mode Berantakan -->
+            <div class="d-flex justify-content-center align-items-center gap-3 my-4">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="berantakanSwitch"
+                        onchange="toggleModeSwitch(this)">
+                    <label class="form-check-label" for="berantakanSwitch">Mode Berantakan</label>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="list-group list-group-flush">
+
+                <!-- Pertanyaan 1 -->
+                <div class="row align-items-stretch g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 shadow-sm border-start border-4 border-primary">
+                            <div class="card-header bg-white">
+                                <h3 class="card-title text-primary mb-0 d-flex justify-content-between align-items-center question-title"
+                                    onclick="onSubtitleClick(this)">
+                                    Mengapa menggunakan CSS dan JavaScript dalam pemrograman web modern?
+                                    <span class="toggle-icon ms-3">▼</span>
+                                </h3>
+                            </div>
+                            <div class="card-body answer-content">
+                                <p>CSS digunakan untuk mengatur tampilan dan gaya dari elemen-elemen yang ada di dalam
+                                    HTML. Melalui CSS, pengembang dapat menentukan warna, ukuran teks, jenis huruf, tata
+                                    letak, serta jarak antar elemen sehingga tampilan web menjadi lebih rapi dan
+                                    estetis. Selain itu, CSS juga memungkinkan desain web menyesuaikan ukuran layar pada
+                                    berbagai perangkat, seperti komputer, tablet, maupun ponsel, sehingga pengguna dapat
+                                    menikmati tampilan yang nyaman di mana pun mereka mengaksesnya.</p>
+                                <p>JavaScript berperan untuk memberikan interaksi dan logika dinamis pada halaman web.
+                                    Dengan JavaScript, sebuah situs web tidak lagi bersifat statis, melainkan dapat
+                                    merespons tindakan pengguna seperti menekan tombol, mengisi formulir, atau
+                                    menampilkan data secara real-time tanpa perlu memuat ulang halaman.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="css.jpg" class="img-fluid rounded-top" alt="Ilustrasi CSS">
+                            <div class="card-body">
+                                <p class="small text-muted mb-0">Ilustrasi konsep CSS — styling, layout, tipografi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 2 -->
+                <div class="row align-items-stretch g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 shadow-sm border-start border-4 border-primary">
+                            <div class="card-header bg-white">
+                                <h3 class="card-title text-primary mb-0 d-flex justify-content-between align-items-center question-title"
+                                    onclick="onSubtitleClick(this)">
+                                    Jelaskan konsep dan tujuan utama dari Responsive Web Design (RWD)!
+                                    <span class="toggle-icon">▼</span>
+                                </h3>
+                            </div>
+                            <div class="card-body answer-content">
+                                <p>Konsep utama dari RWD terletak pada penggunaan layout fleksibel, gambar yang adaptif,
+                                    dan media queries pada CSS. Layout fleksibel memungkinkan elemen halaman
+                                    menyesuaikan ukuran secara proporsional terhadap layar pengguna.</p>
+                                <p>Tujuan utama dari Responsive Web Design adalah untuk meningkatkan pengalaman pengguna
+                                    (user experience). Dengan RWD, pengguna dapat mengakses situs dengan nyaman di
+                                    perangkat apa pun tanpa kehilangan fungsi atau keindahan tampilan. Selain itu, RWD
+                                    juga membantu efisiensi pengelolaan karena pengembang hanya perlu membuat satu versi
+                                    situs yang bisa digunakan di semua perangkat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="RWD.jpeg" class="img-fluid rounded-top" alt="Ilustrasi RWD">
+                            <div class="card-body">
+                                <p class="small text-muted mb-0">Ilustrasi RWD — contoh breakpoints dan adaptasi layout.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 3 -->
+                <div class="row align-items-stretch g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 shadow-sm border-start border-4 border-primary">
+                            <div class="card-header bg-white">
+                                <h3 class="card-title text-primary mb-0 d-flex justify-content-between align-items-center question-title"
+                                    onclick="onSubtitleClick(this)">
+                                    Bagaimana kombinasi CSS, JavaScript, dan prinsip RWD dapat menghasilkan tampilan web
+                                    yang interaktif sekaligus adaptif?
+                                    <span class="toggle-icon">▼</span>
+                                </h3>
+                            </div>
+                            <div class="card-body answer-content">
+                                <p>CSS, JavaScript, dan prinsip Responsive Web Design (RWD) berperan penting dalam
+                                    menciptakan tampilan web yang interaktif sekaligus adaptif. Ketiganya bekerja secara
+                                    saling melengkapi untuk menghadirkan pengalaman pengguna yang menarik, dinamis, dan
+                                    nyaman di berbagai perangkat.</p>
+                                <ol>
+                                    <li>CSS bertanggung jawab dalam mengatur tampilan dan gaya halaman web. Melalui CSS,
+                                        pengembang dapat menentukan warna, ukuran, tata letak, serta efek visual yang
+                                        mempercantik tampilan website.</li>
+                                    <li>JavaScript menambahkan unsur interaktivitas dan dinamika pada halaman web.
+                                        Bahasa ini memungkinkan situs web merespons tindakan pengguna secara langsung,
+                                        seperti menampilkan animasi, membuka menu secara otomatis, atau memvalidasi
+                                        formulir tanpa perlu memuat ulang halaman.</li>
+                                    <li>Responsive Web Design (RWD) menjadi dasar agar semua elemen yang dibuat dengan
+                                        CSS dan JavaScript dapat beradaptasi dengan berbagai ukuran layar. RWD
+                                        memastikan struktur, konten, dan interaksi tetap optimal tanpa mengubah
+                                        estetika maupun fungsionalitas.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="styling.jpg" class="img-fluid rounded-top" alt="Ilustrasi Styling">
+                            <div class="card-body">
+                                <p class="small text-muted mb-0">Ilustrasi tambahan: teknik styling dan best practice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
